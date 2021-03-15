@@ -101,8 +101,8 @@
     width : 50vw ;
   }
 }
-@media screen and (max-width:589px){
+@media screen and (max-width:626px){
   .Card {
-    width : 90vw ;
+    width : 80vw ;
   }
 }
