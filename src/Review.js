@@ -5,13 +5,12 @@ import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 
 const Review = () => {
     
+    // Chooses the first value randomly each time the application renders;
     let [currentIndex, setCurrentIndex] = useState(Math.floor(Math.random()* data.length));
 
 
     const InceramentHandler = () => {
-        setCurrentIndex(prevState => {
-            return (prevState + 1 ) % (data.length);
-        })
+        setCurrentIndex(prevState => (prevState + 1 ) % (data.length))
     }
 
     const DecreamentHandler = () => {
